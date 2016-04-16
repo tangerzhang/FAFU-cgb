@@ -1,0 +1,99 @@
+#!/usr/bin/perl -w
+
+
+use Getopt::Std;
+getopts "i:g:";
+
+
+if ((!defined $opt_i)|| (!defined $opt_g) ) {
+    die "************************************************************************
+    Usage: perl blastn_parse.pl -i input.fastq -g genome size
+      -h : help and usage.
+      -i : input fastq
+      -g : genome size
+************************************************************************\n";
+}else{
+  print "************************************************************************\n";
+  print "Version 1.0\n";
+  print "Copyright to Tanger, tanger.zhang\@gmail.com\n";
+  print "RUNNING...\n";
+  print "************************************************************************\n";
+        
+        }
+
+my $genome_size = $opt_g;
+$genome_size = lc $genome_size;
+if($genome_size =~ /m/){
+	$genome_size =~ s/m//g;
+	$genome_size = $genome_size * 1000000;
+}elsif($genome_size =~ /g/){
+	$genome_size =~ s/g//g;
+	$genome_size = $genome_size * 1000000000;
+	}
+my @data;
+my $sum = 0;
+
+open(OUT, "> len.txt") or die"";
+open(IN, $opt_i) or die"";
+while(my $line1=<IN>){
+	my $line2=<IN>;
+	my $line3=<IN>;
+	my $line4=<IN>;
+	chomp $line1;
+	chomp $line2;
+	chomp $line3;
+	chomp $line4;
+  my $l = length $line2;
+  push @data, $l;
+  $sum += $l;
+  print OUT "$l\n";
+	}
+close IN;
+close OUT;
+
+@data = sort {$b<=>$a} @data;
+my $num = @data;
+my $ave = int $sum/$num;
+my $median = $data[int ($num/2)];
+
+my $Ng50;
+my $Nt50;
+my $tmp = 0;
+foreach my $i(0..$#data){
+	$tmp += $data[$i];
+	last if($tmp>($genome_size/2));
+	$Ng50 = $data[$i];
+	}
+
+$tmp = 0;
+foreach my $i(0..$#data){
+	$tmp += $data[$i];
+	last if($tmp>($sum/2));
+	$Nt50 = $data[$i];
+	}
+
+
+print "Statistics of $opt_i\n";
+print "Ng50: $Ng50\n"; ###half of genome size
+print "Nt50: $Nt50\n"; ###half of total fastq size
+print "Average: $ave\n";
+print "Median: $median\n";
+print "No. of Seq: $num\n";
+print "Total size: $sum\n";
+
+open(OUT, ">Rplot.txt") or die"";
+print OUT "data<-read.table(\"len.txt\")\n";
+print OUT "x<-data[,1]\n";
+print OUT "max_num<-max(x)\n";
+print OUT "pdf(\"length.pdf\")\n";
+print OUT "h <- hist(x,col=\"green\", breaks=seq(0,max_num+1000, 1000),main=\"Length distribution\", xlab=\"Read Length (bp)\", ylab=\"Number of Reads\", las=1, xlim=c(0,max_num))\n";
+print OUT "dev.off()\n";
+close OUT;
+
+system("chmod +x Rplot.txt");
+my $Rcmd = "R CMD BATCH --no-save ./Rplot.txt";
+system($Rcmd);
+
+
+
+
