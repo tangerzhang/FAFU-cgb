@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg height="5000" width="5000" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<polygon points="230,50 250,30 330,30 350,50 330,70 250,70 " style="fill: beige; fill-opacity: 1; stroke: beige; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="250" y="50">ABRE</text>
+	<polygon points="430,50 490,30 550,50 540,90 440,90 " style="fill: dodgerblue; fill-opacity: 1; stroke: dodgerblue; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="450" y="50">AC-II</text>
+	<ellipse cx="630" cy="50" fill="rosybrown" rx="40" ry="20" stroke="rosybrown" />
+	<text font-family="Arial" font-size="2" stroke="black" x="630" y="50">ARE</text>
+	<circle cx="830" cy="50" fill="midnightblue" r="40" stroke="midnightblue" />
+	<text font-family="Arial" font-size="2" stroke="black" x="810" y="30">Box</text>
+	<polygon points="1030,50 1090,30 1150,50 1140,90 1040,90 " style="fill: darkorange; fill-opacity: 1; stroke: darkorange; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1050" y="50">Box-W1</text>
+	<polygon points="1230,50 1250,30 1330,30 1350,50 1330,70 1250,70 " style="fill: lightgreen; fill-opacity: 1; stroke: lightgreen; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1250" y="50">CAAT-box</text>
+	<ellipse cx="1430" cy="50" fill="lemonchiffon" rx="40" ry="20" stroke="lemonchiffon" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1430" y="50">G-box</text>
+	<rect fill="steelblue" height="60" stroke="steelblue" width="120" x="1630" y="20" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1650" y="60">MBS</text>
+	<circle cx="1830" cy="50" fill="teal" r="40" stroke="teal" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1810" y="30">O2-site</text>
+	<polygon points="2030,50 2050,30 2130,30 2150,50 2130,70 2050,70 " style="fill: orangered; fill-opacity: 1; stroke: orangered; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="2050" y="50">TATA-box</text>
+	<rect fill="slategray" height="60" stroke="slategray" width="120" x="2230" y="20" />
+	<text font-family="Arial" font-size="2" stroke="black" x="2250" y="60">box</text>
+	<polygon points="2430,50 2490,20 2550,50 2490,80 " style="fill: royalblue; fill-opacity: 1; stroke: royalblue; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="2450" y="50">circadian</text>
+	<polygon points="2630,50 2650,30 2730,30 2750,50 2730,70 2650,70 " style="fill: fuchsia; fill-opacity: 1; stroke: fuchsia; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="2650" y="50">plant_AP-2-like</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="5" y="210">SoSPSA.a</text>
+	<line stroke="black" stroke-width="2" x1="30" x2="5000" y1="250" y2="250" />
+	<text font-family="Arial" font-size="2" stroke="black" x="190" y="210">-1896</text>
+	<polygon points="190,250 210,230 290,230 310,250 290,270 210,270 " style="fill: beige; fill-opacity: 1; stroke: beige; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="210" y="250">ABRE</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="350" y="210">-1852</text>
+	<polygon points="350,250 410,220 470,250 410,280 " style="fill: royalblue; fill-opacity: 1; stroke: royalblue; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="370" y="250">circadian</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="510" y="210">-1772</text>
+	<polygon points="510,230 570,210 630,230 620,270 520,270 " style="fill: dodgerblue; fill-opacity: 1; stroke: dodgerblue; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="530" y="230">AC-II</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="670" y="210">-1674</text>
+	<ellipse cx="690" cy="250" fill="lemonchiffon" rx="40" ry="20" stroke="lemonchiffon" />
+	<text font-family="Arial" font-size="2" stroke="black" x="690" y="250">G-box</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="830" y="210">-1663</text>
+	<polygon points="830,250 850,230 930,230 950,250 930,270 850,270 " style="fill: orangered; fill-opacity: 1; stroke: orangered; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="850" y="250">TATA-box</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="990" y="210">-1517</text>
+	<polygon points="990,230 1050,210 1110,230 1100,270 1000,270 " style="fill: darkorange; fill-opacity: 1; stroke: darkorange; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1010" y="230">Box-W1</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="1150" y="210">-1454</text>
+	<rect fill="slategray" height="60" stroke="slategray" width="120" x="1150" y="220" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1170" y="260">box</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="1310" y="210">-1432</text>
+	<circle cx="1350" cy="250" fill="teal" r="40" stroke="teal" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1330" y="230">O2-site</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="1470" y="210">-1418</text>
+	<rect fill="steelblue" height="60" stroke="steelblue" width="120" x="1470" y="220" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1490" y="260">MBS</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="1630" y="210">-1364</text>
+	<polygon points="1630,250 1650,230 1730,230 1750,250 1730,270 1650,270 " style="fill: orangered; fill-opacity: 1; stroke: orangered; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1650" y="250">TATA-box</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="1790" y="210">-1357</text>
+	<ellipse cx="1810" cy="250" fill="rosybrown" rx="40" ry="20" stroke="rosybrown" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1810" y="250">ARE</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="1950" y="210">-1354</text>
+	<polygon points="1950,250 1970,230 2050,230 2070,250 2050,270 1970,270 " style="fill: orangered; fill-opacity: 1; stroke: orangered; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="1970" y="250">TATA-box</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="2110" y="210">-1289</text>
+	<circle cx="2150" cy="250" fill="midnightblue" r="40" stroke="midnightblue" />
+	<text font-family="Arial" font-size="2" stroke="black" x="2130" y="230">Box</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="2270" y="210">-1042</text>
+	<polygon points="2270,250 2290,230 2370,230 2390,250 2370,270 2290,270 " style="fill: fuchsia; fill-opacity: 1; stroke: fuchsia; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="2290" y="250">plant_AP-2-like</text>
+	<text font-family="Arial" font-size="2" stroke="black" x="2430" y="210">-593</text>
+	<polygon points="2430,250 2450,230 2530,230 2550,250 2530,270 2450,270 " style="fill: lightgreen; fill-opacity: 1; stroke: lightgreen; stroke-opacity: 1; stroke-width: 0" />
+	<text font-family="Arial" font-size="2" stroke="black" x="2450" y="250">CAAT-box</text>
+	<!-- 
+	Generated using the Perl SVG Module V2.64
+	by Ronan Oger
+	Info: http://www.roitsystems.com/
+ -->
+</svg>

@@ -1,0 +1,49 @@
+>SoSPSA.a
+ABRE	Oryza sativa	103	+	9	GCCGCGTGGC	cis-acting element involved in the abscisic acid responsiveness
+ARE	Zea mays	642	+	6	TGGTTT	cis-acting regulatory element essential for the anaerobic induction
+Box II -like sequence	Oryza sativa	710	+	10	TCCGTGTACCA	cis-acting regulatory element
+CAAT-box	Hordeum vulgare	592	+	4	CAAT	common cis-acting element in promoter and enhancer regions
+G-box	Zea mays	325	+	6	CACGAC	cis-acting regulatory element involved in light responsiveness
+MBS	Zea mays	581	+	6	CGGTCA	MYB Binding Site
+O2-site	Zea mays	567	+	9	GATGACATGG	cis-acting regulatory element involved in zein metabolism regulation
+TATA-box	Arabidopsis thaliana	336	+	4	TATA	core promoter element around -30 of transcription start
+TATA-box	Lycopersicon esculentum	645	+	5	TTTTA	core promoter element around -30 of transcription start
+TATA-box	Lycopersicon esculentum	635	+	5	TTTTA	core promoter element around -30 of transcription start
+AC-II	Phaseolus vulgaris	227	+	11	TCCACCAACCCC	
+Box-W1	Petroselinum crispum	482	+	6	TTGACC	fungal elicitor responsive element
+CAAT-box	Arabidopsis thaliana	103	+	6	gGCAAT	common cis-acting element in promoter and enhancer regions
+CAAT-box	Glycine max	1230	-	5	CAATT	common cis-acting element in promoter and enhancer regions
+CAAT-box	Brassica rapa	1228	+	5	CAAAT	common cis-acting element in promoter and enhancer regions
+CAAT-box	Hordeum vulgare	1406	-	4	CAAT	common cis-acting element in promoter and enhancer regions
+CAAT-box	Hordeum vulgare	147	+	4	CAAT	common cis-acting element in promoter and enhancer regions
+CAAT-box	Hordeum vulgare	1292	+	4	CAAT	common cis-acting element in promoter and enhancer regions
+CAAT-box	Arabidopsis thaliana	1229	-	8	CCCAATTT	common cis-acting element in promoter and enhancer regions
+CAAT-box	Arabidopsis thaliana	1231	-	5	CCAAT	common cis-acting element in promoter and enhancer regions
+CAAT-box	Hordeum vulgare	105	+	4	CAAT	common cis-acting element in promoter and enhancer regions
+CAAT-box	Brassica rapa	1360	+	5	CAAAT	common cis-acting element in promoter and enhancer regions
+CAAT-box	Hordeum vulgare	1079	-	4	CAAT	common cis-acting element in promoter and enhancer regions
+W box	Arabidopsis thaliana	482	+	6	TTGACC	
+box E	Petroselinum crispum	545	+	9	ACCCATCAAG
+circadian	Lycopersicon esculentum	147	+	6	CAANNNNATC	cis-acting regulatory element involved in circadian control
+plant_AP-2-like	Oryza sativa	957	-	8	CGCGCCGG
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

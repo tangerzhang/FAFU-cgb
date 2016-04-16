@@ -1,0 +1,48 @@
+#!/usr/bin/perl -w
+
+###Note: get top 25x longest sequences from fastq file for PacBio assembly
+
+my $input_fastq = $ARGV[0];
+my $genome_size = $ARGV[1];
+my $coverage    = (defined $ARGV[2) ? $ARGV[2] : 25;
+
+if(!defined($genome_size)){
+	die "Usage: Usage: perl top25fq.pl fastq_file genome_size coverage > top25.fastq\n";
+	}
+
+
+if($genome_size =~ /\d+[m|M]/){
+	$genome_size =~ s/[m|M]//g;
+	$genome_size = $genome_size * 1000000;
+}elsif($genome_size =~ /\d+[g|G]/){
+	$genome_size =~ s/[g|G]//g;
+	$genome_size = $genome_size * 1000000000;
+	}
+
+
+
+my %infordb;
+open(IN, $input_fastq) or die"Usage: perl top25fq.pl fastq_file genome_size coverage > top25.fastq\n";
+while(my $line1=<IN>){
+        chomp $line1;
+        my $line2=<IN>; chomp $line2;
+        my $line3=<IN>; chomp $line3;
+        my $line4=<IN>; chomp $line4;
+        my $len  = length $line2;
+        $infordb{$line1}->{'LEN'} = $len;
+        $infordb{$line1}->{'SEQ'} = $line2;
+        $infordb{$line1}->{'QUA'} = $line4;
+        }
+close IN;
+
+my $sum_size = 0;
+my $coverage25x = $genome_size * $coverage;
+
+foreach my $name(sort {$infordb{$b}->{'LEN'}<=>$infordb{$a}->{'LEN'}} keys %infordb){
+	$sum_size += $infordb{$name}->{'LEN'};
+#	print "$name	$infordb{$name}->{'LEN'}	$sum_size	$coverage25x\n";
+	next if($sum_size>$coverage25x);
+	print "$name\n$infordb{$name}->{'SEQ'}\n+\n$infordb{$name}->{QUA}\n";
+	}
+
+
