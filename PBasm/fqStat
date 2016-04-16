@@ -7,7 +7,7 @@ getopts "i:g:";
 
 if ((!defined $opt_i)|| (!defined $opt_g) ) {
     die "************************************************************************
-    Usage: perl blastn_parse.pl -i input.fastq -g genome size
+    Usage: fqStat -i input.fastq -g genome size
       -h : help and usage.
       -i : input fastq
       -g : genome size
