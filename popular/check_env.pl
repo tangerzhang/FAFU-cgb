@@ -1,0 +1,30 @@
+#!/usr/bin/perl 
+
+print "check Bioperl\n";
+system("perl -MBio::Seq -e 1");
+print "check your AUGUSTUS_CONFIG_PATH\n";
+system("echo \$AUGUSTUS_CONFIG_PATH");
+print "check simple_blast\n";
+system("which simple_blast");
+print "check cd-hit\n";
+system("which cd-hit");
+print "check scipio.1.4.1.pl\n";
+system("which scipio.1.4.1.pl");
+print "check YAML.pm\n";
+system("perl -MYAML -e 1");
+print "check yaml2gff.1.4.pl\n";
+system("which yaml2gff.1.4.pl");
+print "check gff2gbSmallDNA.pl\n";
+system("which gff2gbSmallDNA.pl");
+print "check etraining\n";
+system("which etraining");
+print "check filterGenes.pl\n";
+system("which filterGenes.pl");
+print "check randomSplit.pl\n";
+system("which randomSplit.pl");
+print "check new_species.pl\n";
+system("which new_species.pl");
+print "check optimize_augustus.pl\n";
+system("which optimize_augustus.pl");
+print "check augustus\n";
+system("which augustus");
