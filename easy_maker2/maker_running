@@ -1,0 +1,9 @@
+#!/usr/bin/perl -w
+
+my $opt      = $ARGV[0];
+my $jobid    = $ARGV[1];
+my $anno_out = $ARGV[2];
+
+my $maker_out_dir = "part_".$jobid.".maker.output";
+system("maker opt_dir/$opt -fix_nucleotides");
+system("mv $maker_out_dir $anno_out/");
