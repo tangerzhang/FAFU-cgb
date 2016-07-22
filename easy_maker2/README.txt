@@ -4,7 +4,7 @@ update to the second version, adapt to SGE cluseter
 
 ###0. install
   a. install EVM
-  http://evidencemodeler.github.io/
+  http://evidencemodeler.github.io/ 
   b. install easy_maker2
   git clone https://links
   chmod +x easy_maker2/*
