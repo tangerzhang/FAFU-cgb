@@ -69,7 +69,7 @@ foreach my $line(@linedb){
 		print $out ">$gene\n$cdsdb{$gene}\n";
 		}
   close $out;
-  system("perl cds2pro.pl cds_fasta/$cds_per_group > pro_fasta/$pro_per_group");
+  system("cds2pro.pl cds_fasta/$cds_per_group > pro_fasta/$pro_per_group");
   print OUT "cds2axt.pl -i $label\n";
 
 	}
