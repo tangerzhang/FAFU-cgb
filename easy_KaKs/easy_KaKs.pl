@@ -28,7 +28,7 @@ system("rm -rf kaks_result");
 system("mkdir kaks_result");
 
 open(PROC, "> proc") or die"";
-print PROC "20"
+print PROC "20";
 close PROC;
 
 my $group_file = $opt_g;
