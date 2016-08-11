@@ -126,9 +126,9 @@ foreach $line(@linedb){
 			$pairA  = $genedb[$i]."-".$genedb[$j];
 			$pairB  = $genedb[$j]."-".$genedb[$i];
 #			print OUT "$pairA\n";
-			print OUT "$pairA	$pairsdb{$pairA}->{'ratio'}\n" if(exists($pairsdb{$pairA}) and $pairsdb{$pairA} ne "NA");
-			print OUT "$pairB	$pairsdb{$pairB}->{'ratio'}\n" if(exists($pairsdb{$pairB}) and $pairsdb{$pairB} ne "NA");
-			}
+			print OUT "$pairA	$pairsdb{$pairA}->{'Ka'}	$pairsdb{$pairA}->{'Ks'}	$pairsdb{$pairA}->{'ratio'}	$pairsdb{$data[0]}->{'P'}\n" if(exists($pairsdb{$pairA}) and $pairsdb{$pairA} ne "NA");
+	                print OUT "$pairB	$pairsdb{$pairB}->{'Ka'}	$pairsdb{$pairB}->{'Ks'}	$pairsdb{$pairB}->{'ratio'}	$pairsdb{$data[0]}->{'P'}\n" if(exists($pairsdb{$pairB}) and $pairsdb{$pairB} ne "NA");
+		}
 		}
 	}
 close IN;
