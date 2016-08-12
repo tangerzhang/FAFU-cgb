@@ -21,6 +21,8 @@ perl ~/bin/KaKs.pl -g group.txt -i cds.fasta
 
 4. results
 group_kaks.txt
+>gene groups
+gene_pair Ka  Ks  Ka/Ks_ratio P-value
 
 For details, see kaks_result/
 
