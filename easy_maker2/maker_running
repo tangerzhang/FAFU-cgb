@@ -6,4 +6,5 @@ my $anno_out = $ARGV[2];
 
 my $maker_out_dir = "part_".$jobid.".maker.output";
 system("maker opt_dir/$opt -fix_nucleotides");
+system("rm -rf $anno_out/$maker_out_dir");
 system("mv $maker_out_dir $anno_out/");
