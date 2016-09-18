@@ -139,6 +139,7 @@ print OUT "#!/bin/sh
 #\$ -S /bin/bash
 #\$ -pe mpi 2
 #\$ -cwd
+#\$ -q all.q
 
 jobid=\$SGE_TASK_ID
 if [ x\$jobid = x -o x\$jobid = xundefined -o x\$jobid = x0 ]; then
