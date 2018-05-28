@@ -91,7 +91,7 @@ while(my $axt_file = glob "axt_dir/*.cds_aln.axt"){
 	my $kaks    = $axt_file;
 	$kaks       =~ s/.cds_aln.axt//g;
 	$kaks      .= ".kaks.txt";
-	system("KaKs_Calculator -m YN -i axt_dir/$axt_file -o kaks_result/$kaks &>> run.log");
+	system("KaKs_Calculator -m NG -i axt_dir/$axt_file -o kaks_result/$kaks &>> run.log");
 	}
 
 print "....Done....\n";
