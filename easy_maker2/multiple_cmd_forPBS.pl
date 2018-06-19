@@ -5,7 +5,8 @@ system("mkdir script");
 system("rm -rf log");
 system("mkdir log");
 my $count=0;
-open(IN, "cmd.list") or die"";
+#for K in {1..60};do echo "maker_running maker_opts.${K}.ctl ${K} anno_out">>cmd.list;done
+open(IN, "cmd.list") or die"Error: no cmd.list found\n";
 while(<IN>){
 	chomp;
 	$count++;
