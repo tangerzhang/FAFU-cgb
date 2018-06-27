@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 use Getopt::Std;
-getopts "g:i:";
+getopts "g:i:m:";
 
 
 if ((!defined $opt_g)|| (!defined $opt_i)) {
@@ -10,6 +10,7 @@ if ((!defined $opt_g)|| (!defined $opt_i)) {
            -h : help
            -g : group file, one line for each group, e.g. AT1G00004 Sb3G000010 
            -i : cds.fasta
+	   -m : model, YN for dicots and NG for monocots (default NG)
 ************************************************************************\n";
 }else{
   print "************************************************************************\n";
@@ -33,6 +34,7 @@ close PROC;
 
 my $group_file = $opt_g;
 my $cds        = $opt_i;
+my $model      = (defined $opt_m)?$opt_m:"NG";
 
 my %cdsdb;
 open(IN, $cds) or die"";
@@ -91,7 +93,7 @@ while(my $axt_file = glob "axt_dir/*.cds_aln.axt"){
 	my $kaks    = $axt_file;
 	$kaks       =~ s/.cds_aln.axt//g;
 	$kaks      .= ".kaks.txt";
-	system("KaKs_Calculator -m NG -i axt_dir/$axt_file -o kaks_result/$kaks &>> run.log");
+	system("KaKs_Calculator -m $model -i axt_dir/$axt_file -o kaks_result/$kaks &>> run.log");
 	}
 
 print "....Done....\n";
