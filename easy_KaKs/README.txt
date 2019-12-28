@@ -14,7 +14,6 @@ cd easy_KaKs/*
 chmod +x *
 cp *.pl ~/bin/
 cp KaKs_Calculator ~/bin/
-cp proc /path/to/your/workplace/
 
 3. run easy_KaKs.pl
 perl ~/bin/KaKs.pl -g group.txt -i cds.fasta
